@@ -1,0 +1,145 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #19191B;
+  z-index: 100;
+}
+
+.navbar-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  width: 132px;
+  height: 40px;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar-item {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  color: #5454D4;
+}
+
+.navbar-btn {
+  height: 44px;
+  width: 157px;
+  background: inherit;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navbar-btn:hover {
+  background: #5454D4;
+  border-color: #5454D4;
+}
+
+i.navbar-icon {
+  display: none;
+  font-size: 45px;
+}
+
+
+/* mobile menu */
+
+
+.navbar-modile {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #19191B;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(-100vh);
+  transition: transform 0.5s ease;
+}
+
+.navbar-modile.open {
+  transform: translateY(0);
+}
+
+.navbar-modile-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.navbar-modile-item {
+  font-size: 25px;
+}
+
+.navbar-mobile-btn {
+  height: 44px;
+  width: 157px;
+  background: inherit;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
+/* active styles */
+
+.active {
+  color: #5454D4;
+}
+
+.active-btn {
+  background: #5454D4;
+  border-color: #5454D4;
+}
+
+.scrolled {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+/* media */
+
+@media (max-width: 900px) {
+  .navbar-list {
+    display: none;
+  }
+
+  .navbar-btn {
+    display: none;
+  }
+
+  i.navbar-icon {
+    display: inline-block;
+  }
+}

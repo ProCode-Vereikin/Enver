@@ -1,0 +1,156 @@
+.hero {
+  padding-top: 40px;
+}
+
+.hero-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-item-left {
+  max-width: 50%;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.hero-title {
+  margin-top: 100px;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.hero-btn {
+  width: 204px;
+  height: 58px;
+  background: #5454D4;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.hero-btn p {
+  max-width: 536px;
+  font-size: 20px;
+}
+
+.hero-icon {
+  font-size: 30px;
+}
+
+.hero-item-right {
+  position: relative;
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* absolute img */
+.hero-vector-one {
+  position: absolute;
+  top: 15%;
+  left: -10%;
+}
+
+.hero-vector-two {
+  position: absolute;
+  top: 8%;
+  right: 0;
+}
+
+.hero-vector-three {
+  position: absolute;
+  bottom: 10%;
+  left: -15%;
+}
+
+.hero-vector-four {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+@media (max-width: 1260px) {
+  .hero-vector-three {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero-title {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 950px) {
+  .hero-title {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-title {
+    margin-top: 70px;
+    font-size: 85px;
+  }
+
+  .hero-list {
+    flex-direction: column;
+  }
+
+  .hero-item-left {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-item-right {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-vector-one {
+    top: 0;
+    left: 0;
+  }
+  .hero-vector-two {
+    top: 0;
+    right: 0;
+  }
+  .hero-vector-three {
+    left: 0;
+  }
+  .hero-vector-four {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-title {
+    margin-top: 50px;
+    font-size: 60px;
+  }
+  .hero-vector-two,
+  .hero-vector-three {
+    display: none;
+  }
+}

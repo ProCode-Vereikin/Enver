@@ -1,0 +1,53 @@
+.portfolio {
+  margin-top: 80px;
+}
+
+.portfolio-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-vector-one {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.portfolio-vector-two {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.portfolio-promo {
+  display: flex;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+.portfolio-title {
+  text-align: left;
+}
+
+.portfolio-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.portfolio-img {
+  max-width: 100%;
+  padding: 10px;
+  background: #1E1E20;
+  border-radius: 20px;
+}
+
+@media (max-width: 820px) {
+  .portfolio-vector-one {
+    top: 15%;
+  }
+}
